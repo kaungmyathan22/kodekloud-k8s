@@ -1,16 +1,16 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: redis
+  name: db
   labels:
-    name: redis-service
+    name: db-service
     app: 'demo-voting-app'
 spec:
   selector:
-    name: 'redis-pod'
+    name: 'postgres-pod'
     pod: 'demo-voting-app'
   type: ClusterIP
   ports:
-    - name: redis-service
-      targetPort: 6379
-      port: 6379
+    - name: postgres-service
+      targetPort: 5432
+      port: 5432
