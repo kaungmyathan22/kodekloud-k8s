@@ -8,7 +8,7 @@ metadata:
 spec:
   selector:
     name: 'result-app-pod'
-    pod: 'demo-result-app'
+    pod: 'demo-voting-app'
   type: NodePort
   ports:
     - name: result-app-port

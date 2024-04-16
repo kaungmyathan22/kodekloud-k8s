@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
     - name: worker-app-container
-      image: kodekloud/examplevotingapp_worker:1
+      image: kodekloud/examplevotingapp_worker:v1
       resources:
         limits:
           cpu: 200m
