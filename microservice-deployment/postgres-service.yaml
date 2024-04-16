@@ -11,6 +11,6 @@ spec:
     pod: 'demo-voting-app'
   type: ClusterIP
   ports:
-    - name: postgres-service
+    - name: postgres-service-port
       targetPort: 5432
       port: 5432
